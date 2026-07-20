@@ -1,6 +1,6 @@
 ---
 name: writing-style
-description: "Apply the user's universal writing standard to every drafting, rewriting, editing, summarizing, or publishing task. Use for all prose, especially technical writing and content for arunabh1904.github.io, to make topic order coherent, paragraphs cumulative rather than choppy, claims specific, and transitions earned. Always load this base before any paper, blog, Build Intuition, Revision Notes, or Code-practice template."
+description: "Apply the user's universal writing standard to every drafting, rewriting, editing, summarizing, or publishing task. Use for all prose, especially technical writing and content for arunabh1904.github.io, to make topic order coherent, paragraphs cumulative rather than choppy, claims specific, and transitions earned. Always load this base before any paper, blog, Revision Notes, or Code-practice template."
 ---
 
 # Writing Style
