@@ -1,0 +1,4 @@
+interface:
+  display_name: "Writing Style"
+  short_description: "Make every piece coherent, cumulative, and specific"
+  default_prompt: "Use $writing-style to structure and revise this writing so its topics and paragraphs build coherently."

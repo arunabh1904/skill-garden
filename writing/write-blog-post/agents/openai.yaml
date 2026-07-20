@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write Blog Post"
+  short_description: "Write reflective essays and technical survey blogs"
+  default_prompt: "Use $write-blog-post to turn this material into a finished Blog post in my website voice."

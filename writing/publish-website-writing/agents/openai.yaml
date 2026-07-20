@@ -1,0 +1,4 @@
+interface:
+  display_name: "Publish Website Writing"
+  short_description: "Route, validate, and ship website writing"
+  default_prompt: "Use $publish-website-writing to format this writing for the right site category and ship it through GitHub."

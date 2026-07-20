@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write Revision Notes"
+  short_description: "Turn source material into durable revision notes"
+  default_prompt: "Use $write-revision-notes to turn this source into structured revision notes for my website."

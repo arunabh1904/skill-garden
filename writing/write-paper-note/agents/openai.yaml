@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write Paper Note"
+  short_description: "Create source-grounded decision-oriented paper notes"
+  default_prompt: "Use $write-paper-note to create or revise a self-contained Arxiv Note for my website."

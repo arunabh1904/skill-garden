@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write Code Practice Problem"
+  short_description: "Add concise coding interview practice problems"
+  default_prompt: "Use $write-code-practice-problem to add this coding interview problem to my website."
