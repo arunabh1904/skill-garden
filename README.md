@@ -8,8 +8,7 @@ The writing stack lives in [`writing/`](writing/):
 
 - `writing-style` — universal topic architecture, paragraph continuity, evidence discipline, and prose audit. Load this for every writing task.
 - `write-paper-note` — source-grounded, decision-oriented single-paper notes.
-- `write-blog-post` — reflective essays and mechanism-first multi-paper surveys.
-- `write-build-intuition` — intuition-first technical explainers.
+- `write-blog-post` — reflective essays, intuition-first technical explainers, and mechanism-first multi-paper surveys.
 - `write-revision-notes` — faithful, retrieval-oriented notes from lectures and long-form sources.
 - `write-code-practice-problem` — concise coding interview prompts, hints, and solutions.
 - `publish-website-writing` — category routing, repository conventions, validation, and shipping for `arunabh1904.github.io`.
@@ -26,4 +25,4 @@ Put a rule at the narrowest layer where it is universally true:
 - category structure belongs in a category skill;
 - file paths, validation, and GitHub flow belong in a publishing skill.
 
-This separation avoids template drift and prevents a paper-note convention from leaking into an essay or tutorial.
+This separation avoids template drift and prevents a paper-note convention from leaking into a blog essay, tutorial, or survey.

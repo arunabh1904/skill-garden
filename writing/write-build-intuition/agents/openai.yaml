@@ -1,4 +1,0 @@
-interface:
-  display_name: "Write Build Intuition"
-  short_description: "Create intuition-first technical explainers"
-  default_prompt: "Use $write-build-intuition to create an intuition-first explainer with useful examples and visuals."

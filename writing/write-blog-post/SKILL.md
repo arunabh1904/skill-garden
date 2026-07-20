@@ -1,6 +1,6 @@
 ---
 name: write-blog-post
-description: "Create or revise Blog posts for arunabh1904.github.io, including reflective essays, research commentary, and tutorial-depth multi-paper technical surveys. Use when section is blog or when a draft synthesizes a field into an argument. Do not apply the compact one-paper Arxiv Note template."
+description: "Create or revise Blog posts for arunabh1904.github.io, including reflective essays, intuition-first technical explainers, research commentary, and tutorial-depth multi-paper surveys. Use when section is blog, when a draft teaches a durable mental model, or when it synthesizes a field into an argument. Do not apply the compact one-paper Arxiv Note template."
 ---
 
 # Write Blog Post
@@ -9,11 +9,10 @@ Read and apply [the universal writing style](../writing-style/SKILL.md).
 
 Before drafting, make a section map. Write one question and one output for every proposed heading. Remove a heading if its output is never used later; demote it if it is a variant or application of another topic. The heading sequence should remain intelligible without body text.
 
-When the request could fit both Blog and Build Intuition, obey an explicit site category. Otherwise choose by the primary reading job: use Blog to synthesize evidence or advance a thesis across sources; use Build Intuition to teach one mental model through examples and derivation.
-
 ## Choose The Form
 
 - Use an essay form for reflection, experience, research commentary, or a single thesis that does not need a literature tutorial.
+- Use a technical tutorial form when the main job is to build one durable mental model through examples, derivation, diagrams, or interaction.
 - Use a survey form when the post synthesizes multiple papers, a training stage, a mechanism family, or a research lineage.
 
 ## Essay Form
@@ -24,6 +23,16 @@ When the request could fit both Blog and Build Intuition, obey an explicit site 
 4. Use headings only when they help argument or pacing. Do not impose a rigid template on reflective writing.
 5. Link sections through the pressure created by the previous section: a consequence, contradiction, or unresolved question.
 6. End by advancing the claim, decision, or unresolved tension rather than summarizing headings.
+
+## Technical Tutorial Form
+
+1. Name the misconception, missing intuition, or practical question that makes the mechanism hard to use.
+2. State the core mental model early enough that readers can use it to interpret every later detail.
+3. Move from the smallest concrete example to the general mechanism. Preserve the same named objects as the explanation gains notation or abstraction.
+4. Define notation before using it. Explain what each equation changes in the reader's model and what the result allows them to predict.
+5. Use worked examples, counterexamples, boundary cases, or small simulations to expose where the intuition holds and where it fails.
+6. Add diagrams, tables, or interactive components only when they let the reader inspect a relationship that prose cannot show as clearly. Frame the task before the object and interpret the result after it.
+7. End major sections with a transfer question or consequence that requires the next concept. End the post with a compact transfer test, the model's limits, and the next question the reader is equipped to answer.
 
 ## Multi-Paper Survey Form
 
@@ -48,7 +57,7 @@ For a connected series, define the dependency chain before drafting. Give each i
 ## Repo Shape
 
 - Use `section: blog` and `/blog/YYYY/MM/DD/<postSlug>.html`.
-- Use a short shelf summary rather than a year-prefixed paper label.
+- Use a short shelf summary that names the post's question or payoff rather than a year-prefixed paper label.
 - Prefer `.md`; use `.mdx` only for imports, JSX, or an interactive component.
 - Use `$...$` and `$$...$$` for math.
 - Put local visuals in `public/assets/images/`; introduce and interpret each one.
