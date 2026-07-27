@@ -20,6 +20,16 @@ Read exactly one primary category skill; that template loads [the universal writ
 
 Respect the user's category. Infer only when absent, and report the inference. A multi-paper technical survey belongs in Blog; do not route it to Arxiv Notes.
 
+## Resolve The Paper Radar Queue
+
+Before scoping a paper-publishing request, check `/Users/arunabhmishra/Code/paper-radar` when it exists:
+
+1. Run `.venv/bin/paper-radar sync-actions` from that repository to import signed phone actions queued in Gmail.
+2. Run `.venv/bin/paper-radar publishing-queue --json` and inspect `out/publishing-queue.json`.
+3. For a broad batch request such as “ship the relevant papers,” treat every queued external paper as candidate scope. For a request naming one paper, keep that paper in scope and report other queued candidates without silently adding them.
+4. Route each selected paper through `write-paper-note`. A `drafted` queue entry is source metadata, not finished writing; read the canonical paper, verify claims and figures, and complete the normal editorial workflow before publishing.
+5. After shipping, report any queue entries that remain unprocessed. Do not interpret an existing website note or imported blog training example as a queued external paper.
+
 ## Inspect And Create
 
 1. Work from the repo root and inspect `git status` before editing. Preserve unrelated work.
