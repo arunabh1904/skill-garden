@@ -31,15 +31,12 @@ Do not recreate broad catch-all fields such as `BEV`, `Omni-Models`, or `Autonom
 Most notes should contain:
 
 1. Year/title heading and canonical source links.
-2. A compact opening or `Summary` that names the method, setting, and result.
-3. `Paper Insights` covering the problem, mechanism, evidence, and main tradeoff.
-4. A figure, compact table, algorithm, or qualitative example when it materially carries the mechanism or evidence.
-5. `Context` for the paper's position in the research line.
-6. `Limits` for a specific cost, failure, missing comparison, or scope boundary.
-7. `Decision Lens` for the decision the evidence should change.
-8. A falsifiable `Takeaway` or take-home message.
+2. A compact `Summary` that leads with the most decision-relevant result, names the method and setting, and states the evidence boundary.
+3. `Core Insights` covering the minimal mechanism, reported evidence, main trade-off, and one paper-specific delta from the closest relevant prior work: inherited problem, changed mechanism or assumption, reported evidence, and consequence.
+4. A figure, compact table, algorithm, or qualitative example when it materially carries the mechanism or evidence. Add literal, paper-specific subheadings inside `Core Insights` only when they improve navigation.
+5. `High-Level Takeaways` connecting the paper to the research line, stating the decision implication and concrete boundary, and identifying the unresolved object handed to later work.
 
-Omit filler sections. Preserve useful existing material such as derivations, implementation sketches, playgrounds, or benchmark tables.
+Omit filler sections. Preserve useful existing material such as source links, images and captions, derivations, implementation sketches, playgrounds, or benchmark tables. Use `Summary`, `Core Insights`, and `High-Level Takeaways` as the top-level reading path; do not add template sections beneath them when connected prose is clearer.
 
 ## Decision Lens
 
@@ -60,4 +57,4 @@ Treat the last three as the note author's research judgment. For surveys or benc
 
 ## Completeness Check
 
-Verify the note names the problem, minimal method, data, evaluation, main result and baseline, concrete boundary, expensive decision, evidence that would reverse that decision, and the boundary between reported facts and synthesis.
+Verify the note names the problem, minimal method, data, evaluation, main result and baseline, concrete boundary, paper-specific change from prior work, expensive decision, evidence that would reverse that decision, and the boundary between reported facts and synthesis. Across a field, verify that chronological summaries expose real changes in mechanisms and evidence without turning publication order into an unsupported influence claim.
