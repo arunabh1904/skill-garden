@@ -30,17 +30,17 @@ Do not recreate broad catch-all fields such as `BEV`, `Omni-Models`, or `Autonom
 
 Most notes should contain:
 
-1. Year/title heading and canonical source links.
+1. Year/title heading and a compact source block: canonical paper first, followed by useful project, code, data, or venue links.
 2. A compact `Summary` that leads with the most decision-relevant result, names the method and setting, and states the evidence boundary.
 3. `Core Insights` covering the minimal mechanism, reported evidence, main trade-off, and one paper-specific delta from the closest relevant prior work: inherited problem, changed mechanism or assumption, reported evidence, and consequence.
 4. A figure, compact table, algorithm, or qualitative example when it materially carries the mechanism or evidence. Add literal, paper-specific subheadings inside `Core Insights` only when they improve navigation.
-5. `High-Level Takeaways` connecting the paper to the research line, stating the decision implication and concrete boundary, and identifying the unresolved object handed to later work.
+5. `High-Level Takeaways` as three to five concise bullets connecting the paper to the research line, stating the decision implication and concrete boundary, and identifying the unresolved object handed to later work.
 
-Omit filler sections. Preserve useful existing material such as source links, images and captions, derivations, implementation sketches, playgrounds, or benchmark tables. Use `Summary`, `Core Insights`, and `High-Level Takeaways` as the top-level reading path; do not add template sections beneath them when connected prose is clearer.
+Omit filler sections. Preserve useful existing material such as source links, images and captions, derivations, implementation sketches, playgrounds, or benchmark tables. Keep those supporting artifacts in `Core Insights`; reserve `High-Level Takeaways` for the scan-friendly conclusion list. Use `Summary`, `Core Insights`, and `High-Level Takeaways` as the top-level reading path; do not add template sections beneath them when connected prose is clearer.
 
-## Decision Lens
+## Takeaway Bullets
 
-Write two or three connected paragraphs, never a labeled Q&A checklist. Cover only material dimensions:
+Write three to five bullets, not a labeled Q&A checklist. Each bullet should make a claim rather than name a category, and together they should cover only the material dimensions:
 
 - expensive architecture, data, systems, evaluation, or research decision
 - atomic training unit: token, patch, latent, frame, clip, transition, action chunk, or trajectory
@@ -54,6 +54,13 @@ Write two or three connected paragraphs, never a labeled Q&A checklist. Cover on
 - matched-budget falsification experiment and rejection condition
 
 Treat the last three as the note author's research judgment. For surveys or benchmarks, analyze the evaluation artifact rather than pretending the paper trains a model. Omit irrelevant modality, scaling, or compression dimensions.
+
+## Links And Reading Paths
+
+- Put stable external sources at the top of the note. Prefer the canonical paper, official project page, official code repository, and primary dataset page.
+- Link an earlier or later site note inline when the sentence explains a verified technical relationship. Do not link papers merely because they share a field or publication order.
+- Keep `field` accurate. The shared site template uses it to place the note between the earlier and later papers in that field and links back to the filtered chronological index.
+- Do not duplicate that automatic navigation inside the Markdown body.
 
 ## Completeness Check
 
