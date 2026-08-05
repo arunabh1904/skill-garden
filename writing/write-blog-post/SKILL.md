@@ -52,6 +52,28 @@ Use simple, direct titles and headings. Name the subject, mechanism, question, c
 12. Make the reading path cumulative: each layer gets a question and an artifact to produce, not merely a tiered bibliography.
 13. Add canonical references for external facts, source-derived visuals, and paper claims.
 
+## Figure-First Long-Form Workflow
+
+Use this workflow when a mechanism, comparison, or state transition is easier to understand visually. Do not add a figure merely to decorate a section.
+
+1. Plan the explanation before drawing. Write the reader's exact confusion, the invariant objects, the variable that changes, the paper-specific operation, and the conclusion the reader should be able to predict after seeing the figure.
+2. Separate inherited infrastructure from the paper's contribution. If a model uses an existing backbone, feature pyramid, optimizer, or representation, label it as inherited and animate the new projection, carrier, loss, state update, or supervision contract.
+3. Give comparison figures one controlled axis. Reuse the same scene, inputs, task gradients, sensor failure, or frame transition across panels so differences come from the methods rather than from different examples.
+4. Show the irreversible decision. Animate where evidence is assigned, discarded, densified, fused, reweighted, carried through time, or removed from the deployment graph. Prefer the variable that explains the method's characteristic failure over a generic sequence of boxes and arrows.
+5. Keep titles literal and compact. State the mechanism or comparison directly, and retain paper names in panel labels or captions. Use minimal on-canvas text; move qualifications, lineage, and evidence into the surrounding prose.
+6. Distinguish visual provenance. Preserve original paper figures without modification and cite the paper and figure number. Label custom diagrams or GIFs as explanatory synthesis, and verify every depicted mechanism against the primary paper before publishing.
+7. Write around the visual in the order `setup -> figure -> interpretation -> consequence`. Before the figure, name what remains constant and what to watch. After it, explain the literature progression, the inherited component, the core insight, the trade-off, and the next unresolved question.
+8. Inspect the rendered asset at desktop and mobile sizes. Check title wrapping, legibility, contrast, animation timing, aspect ratio, overflow, and reduced-size use. Link dense GIFs or diagrams to the full-resolution asset when mobile rendering makes labels small.
+
+For an animated comparison, storyboard one sentence per panel before implementation:
+
+- **input:** the shared evidence or state;
+- **operation:** the exact paper mechanism;
+- **output:** what survives or changes;
+- **failure:** what the representation can no longer recover.
+
+Reject a figure when its motion cannot be explained in one precise caption, when panels change several variables at once, when the title names a broad topic rather than the displayed mechanism, or when the visual implies a paper claim that the source does not establish.
+
 Use explicit recall when a later section depends on an earlier definition or equation. Repeat the stable technical noun; do not hide continuity behind vague pronouns or ornamental synonyms. A reader should always know which object is being modified and why the topic has changed.
 
 For a connected series, define the dependency chain before drafting. Give each installment one governing question and one explicit handoff to the next.
