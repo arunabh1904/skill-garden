@@ -36,9 +36,10 @@ Before scoping a paper-publishing request, check `/Users/arunabhmishra/Code/pape
 2. For a new post, inspect `src/content.config.ts`, `src/lib/post-utils.ts`, `tests/content.test.ts`, and two or three recent pieces in the target category if conventions may have drifted.
 3. Write posts to `src/content/posts/<postSlug>.md`; use `.mdx` only for imports, JSX, or interaction. Match filename and `postSlug`.
 4. Use full ISO timestamps, sparse tags, a specific shelf `summary`, and the category's `legacyPath` convention.
-5. Use `$...$` and `$$...$$` for math. Put new local images in `public/assets/images/`.
-6. Add only the post file for Arxiv Notes and Blog unless an asset is needed. Revision Notes also requires `src/pages/revision_notes.astro`. Code follows its data-file overlay.
-7. Leave the homepage untouched unless explicitly requested; collection shelves update automatically.
+5. For Blog posts, verify that the title and every section heading are simple and direct. Remove ornamental wordplay and metaphorical framing unless the user explicitly requested them; preserve the existing `postSlug` and `legacyPath` during title-only cleanup.
+6. Use `$...$` and `$$...$$` for math. Put new local images in `public/assets/images/`.
+7. Add only the post file for Arxiv Notes and Blog unless an asset is needed. Revision Notes also requires `src/pages/revision_notes.astro`. Code follows its data-file overlay.
+8. Leave the homepage untouched unless explicitly requested; collection shelves update automatically.
 
 ## Validate And Ship
 
