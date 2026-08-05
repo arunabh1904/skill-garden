@@ -9,6 +9,8 @@ Read and apply [the universal writing style](../writing-style/SKILL.md).
 
 Before drafting, make a section map. Write one question and one output for every proposed heading. Remove a heading if its output is never used later; demote it if it is a variant or application of another topic. The heading sequence should remain intelligible without body text.
 
+Use simple, direct titles and headings. Name the subject, mechanism, question, comparison, or decision plainly; do not add wordplay, slogans, or metaphorical framing unless the user explicitly asks for it. Keep established technical terms intact, and prefer a descriptive noun phrase or concrete question over a clever claim.
+
 ## Choose The Form
 
 - Use an essay form for reflection, experience, research commentary, or a single thesis that does not need a literature tutorial.
