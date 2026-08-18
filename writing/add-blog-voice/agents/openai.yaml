@@ -1,0 +1,4 @@
+interface:
+  display_name: "Add Blog Voice"
+  short_description: "Create expressive static blog narration"
+  default_prompt: "Use $add-blog-voice to prepare and export expressive narration for this Blog post."
