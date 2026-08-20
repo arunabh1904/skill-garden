@@ -1,4 +1,4 @@
 interface:
   display_name: "Write Blog Post"
-  short_description: "Write essays, technical tutorials, and research surveys"
-  default_prompt: "Use $write-blog-post to turn this material into a finished Blog post in my website voice."
+  short_description: "Write gripping, audio-native technical Blog posts"
+  default_prompt: "Use $write-blog-post to turn this material into a self-contained Blog post with short headings, cohesive paragraphs, earned insight callouts, and no filler."
