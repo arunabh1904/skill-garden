@@ -10,6 +10,12 @@ The target style combines three modes:
 
 This is a pragmatic adaptation of Simplified Technical English, not a claim of strict ASD-STE100 compliance. Strict vocabulary control and a fixed 25-word ceiling are useful for maintenance instructions but too restrictive for all research prose. Default to short sentences; exceed that length only when splitting the sentence would hide a causal chain or damage an intentional cadence.
 
+## Protect Scope Before Style
+
+Treat the user's requested change as a contract. A cadence pass may split, shorten, reorder, or delete sentences, but it must not silently become a new literature survey. A compression pass preserves the governing claims, evidence, citations, equations, and decision boundaries; it does not preserve every explanatory sentence. Add background or new sources only when the user asked for more coverage or when a missing fact blocks correctness.
+
+Measure material revisions against their source. A style-only pass should normally hold or reduce prose length. It should not raise the share of long sentences, collapse many paragraphs into denser blocks, or erase the short sentences that carry orientation and consequence. These are regression signals, not universal quotas: inspect the exact passages before overriding them.
+
 ## Build A Topic Spine
 
 Coherence starts before sentence editing. A piece can contain strong paragraphs and still feel arbitrary when its topics do not form a route.
@@ -33,6 +39,35 @@ For technical tutorials, a reliable dependency ladder is:
 `motivation -> minimal object -> canonical mechanism -> derivation or training objective -> variants -> consequences -> limits`
 
 Use only the rungs the topic needs. The value comes from dependency order, not from forcing a template.
+
+## Earn The Title Before The Example
+
+The opening must explain what the title promises. Name the subject, define the job or distinction at stake, and tell the reader what the piece will help them understand. Do this before asking a vivid example, anecdote, or hyperbole to carry the framing alone.
+
+A concrete example is often the right second move. Once the reader knows the task, the example can expose why it is hard. Without that setup, a striking scene can feel like a generated hook pasted in front of an unrelated article.
+
+For authored Blog posts, make the trigger visible when it is real. A post, result, failure, argument, or recurring confusion may have pulled the subject out of the backlog. Say so. Explain why the question feels live now and what changed in the author's own model. Do not replace that motive with generic claims that the topic is important or rapidly evolving.
+
+The opening should usually establish four things within its first few paragraphs:
+
+1. **subject:** what the title actually names;
+2. **job:** what that subject must accomplish or what question it answers;
+3. **motive:** why the author is writing about it now;
+4. **tension:** the example, contradiction, or evidence that makes the explanation necessary.
+
+The order can vary, but none of these jobs should be left implicit in a long technical post.
+
+## Preserve Felt Judgment
+
+Simple technical English is not emotionally neutral English. Authored prose should retain the author's curiosity, frustration, delight, unease, conviction, and uncertainty when those feelings explain why a decision or observation matters.
+
+- Ground emotion in an object or event: a result was surprising, a failure was painful, a tradeoff is uncomfortable, or a mechanism is elegant for a stated reason.
+- Use first person when it locates genuine judgment or experience: `what pulled me back to this`, `the part I find remarkable`, or `what still bothers me`.
+- Let conviction have edges. State what the author would choose, reject, protect, or investigate, then give the reason.
+- Preserve an authored source or anecdote that motivates the piece. Do not demote it to a late citation when it supplies the opening question.
+- Cut manufactured feeling. `Exciting`, `fascinating`, `critical`, and `important` still need a named cause or consequence.
+
+The test is not whether the prose sounds warm. It is whether a reader can tell why this author, with this experience and judgment, chose to write this piece.
 
 ## Make Every Paragraph Answer One Question
 
@@ -85,6 +120,7 @@ Rhythm must clarify the argument. It is not permission for lyrical filler.
 
 - Use short sentences for orientation, contrast, and consequence. Use medium sentences for the normal explanatory load.
 - Reserve a long sentence for a genuine crescendo: several dependencies accumulate, the reader can still track the subject, and the final clause lands the point.
+- Do not create flow by joining independent sentences with commas, semicolons, or conjunctions. Flow comes from dependency: the end of one sentence creates the need for the next.
 - Avoid several sentences with the same length and syntax. Also avoid a mechanical alternation of short and long sentences.
 - Read punctuation as timing. A period closes a unit. A colon opens an explanation. Parentheses lower the volume. An em dash makes a sharp aside or turn. Use each because the relationship calls for it.
 - Repeat a key phrase when repetition builds the idea. Do not replace purposeful repetition merely to vary vocabulary.
@@ -190,5 +226,6 @@ Run silently unless the user requests editorial diagnostics:
 11. Ask the private question for each paragraph and confirm that every sentence helps answer it.
 12. Listen for references that require the page layout. Name the object or relationship so the prose survives audio.
 13. Compare the contribution with the length. Cut until every remaining paragraph repays the reader's attention.
+14. Compare the revision with its source. Investigate unexpected word growth, paragraph collapse, or a higher long-sentence share before accepting the edit.
 
 The plain-language rules adapt the public principles of [ASD Simplified Technical English](https://www.asd-ste100.org/), the user's [Amazon writing reference](https://github.com/ksindi/managers-playbook/blob/main/images/write-like-an-amazonian.jpg), and George Orwell's durable editing principles. The cadence rules use the sentence-length lesson in the user's [write music reference](https://github.com/ksindi/managers-playbook/blob/main/images/write-music.png). The de-slop pass applies Shreya Shankar's [analysis of LLM writing](https://www.sh-reya.com/blog/ai-writing/): remove empty conclusions, list abuse, flat rhythm, wrong subjects, low density, vagueness, ambiguous demonstratives, and fluency without understanding while retaining rhetorical devices that do real work. These are editorial mechanics, not an imitation of another writer's persona or signature phrases.
