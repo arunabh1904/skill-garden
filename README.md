@@ -11,6 +11,7 @@ The writing stack lives in [`writing/`](writing/):
 - `write-blog-post` — reflective essays, intuition-first technical explainers, and mechanism-first multi-paper surveys.
 - `write-revision-notes` — faithful, retrieval-oriented notes from lectures and long-form sources.
 - `write-code-practice-problem` — concise coding interview prompts, hints, and solutions.
+- `add-blog-voice` — human-profile Blog narration, chunk-level speech audits, and audio release checks.
 - `publish-website-writing` — category routing, repository conventions, validation, and shipping for `arunabh1904.github.io`.
 
 Every category skill loads `writing-style`; category skills contain only format and workflow differences. The `.agents/skills/` symlinks make the collection discoverable when Codex works in this repository.
