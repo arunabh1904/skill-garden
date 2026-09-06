@@ -1,11 +1,13 @@
 ---
 name: add-blog-voice
-description: "Create, audit, and export coherent static narration for Blog posts in arunabh1904.github.io. Use when a Blog post needs a listen/read-aloud experience, narration-safe prose, audio generation, or a voice-artifact quality pass."
+description: "Create, audit, and export coherent static narration for Blog posts in arunabh1904.github.io. Use for audio generation, export, or a voice-artifact quality pass. A prose-only read-aloud or continuity edit belongs in writing-style and write-blog-post."
 ---
 
 # Add Blog Voice
 
-Use this after `writing-style` and `write-blog-post` for Blog narration. Keep the visible article authoritative. Narration is a compiled rendering of its argument, not permission to invent a looser script.
+Use this for Blog narration after [writing-style](../writing-style/SKILL.md) and, when revising the article, [write-blog-post](../write-blog-post/SKILL.md). An audio audit alone does not require rewriting the article or starting a release. Keep the visible article authoritative. Narration is a compiled rendering of its argument, not permission to invent a looser script.
+
+Before generation, compare the profile and exporter contract below with the clean release source, including the cached or fetched `origin/main` as appropriate. A stale primary checkout may still carry an older voice or decoder. If the release source differs, resolve the version mismatch before synthesis; do not silently claim that a documented control was applied.
 
 ## Workflow
 
@@ -18,7 +20,7 @@ Use this after `writing-style` and `write-blog-post` for Blog narration. Keep th
 7. Decode each bounded static-export request as one waveform. Do not request low-latency streaming and directly concatenate its intermediate waveforms: audible decoder joins can appear inside a paragraph even when overlap-aware streaming is available. Normalize only request-edge silence, then leave one decibel of headroom before MP3 encoding. Reject a request that reaches its token cap, is silent, is implausibly short or long for its word count, or contains a suspicious internal seam. A clean waveform is necessary but does not prove correct speech.
 8. Keep pronunciation repairs audio-only. Preserve published spelling and add a targeted post-specific override when a shared phonetic spelling fails in a short heading or proper name. Include each override in the digest and manifest.
 9. Keep accepted synthesis reproducible. When ASR or listening rejects one deterministic sample, reroll only that chunk, record its reviewed seed in `HUMAN_CHUNK_SEED_OVERRIDES`, regenerate the assembled MP3, and rerun the complete audit. Never accept an unrecorded lucky reroll.
-10. Keep full-source narration. A duration limit is a compiler policy, not permission to crop, accelerate, silently abridge, or substitute a shorter narration sidecar. If a complete post crosses its limit, raise a narrow reviewed per-post limit or revise the article itself.
+10. Keep full-source narration: retain headings and authored prose in source order. Omit only raw markup, tables, figure and diagram captions, alt text, references, code blocks, and equations. Pronunciation and prosody transforms may change synthesis input, not the extracted narration. A duration limit does not permit cropping, acceleration, abridgment, or a shorter narration sidecar. If a complete post crosses its limit, use a narrow reviewed compiler or per-post limit change. Revise article length only when the user requests that editorial change.
 11. Generate from a clean worktree based on the exact `origin/main` source:
 
     ```bash
@@ -36,8 +38,8 @@ Use this after `writing-style` and `write-blog-post` for Blog narration. Keep th
 
     Keep the committed thresholds unless a reviewed evaluation justifies changing them: aggregate WER at most `0.08`, no insertion longer than two words, no inserted filler or non-lexical token even when it is one word, no chunk above `0.50` WER, and no unaligned prefix, suffix, or internal region longer than `1.5` seconds. The gate normalizes harmless spelled acronyms but must preserve long repeated-letter runs as artifacts. Treat `um`, `uh`, `hmm`, `yeah`, laughter-like tokens, and elongated repeated-letter sounds as release failures when the source did not contain them.
 13. When a voice, sampling profile, or chunk policy changes, render and listen to a short heading-plus-prose canary before paying for the full long-form batch. After the full generation, listen to the opening, inside long requests, at paragraph and section joins, around every rerolled request, at difficult pronunciations, and at the ending. Run waveform integrity checks for NaNs, infinities, denormals, clipping, and suspicious internal silence. ASR and sample statistics support listening; neither replaces it.
-14. Update the technical audio Blog post whenever a material model, voice, chunking, pacing, pronunciation, duration, freshness, validation, licensing, or deployment decision changes. Explain the observed failure, its cause, the rejected fixes, and the release check that prevents regression.
-15. Run `git diff --check` and site CI, then use the follow-up audio PR required by `publish-website-writing`. After deployment, fetch every changed MP3 with a cache-busting query and require its SHA-256 to match the committed asset.
+14. When the task includes changing the audio pipeline and its explanatory Blog post, update that post with the observed failure, cause, rejected fixes, and release check. For a single-post narration task, report any documentation drift without silently adding another article to scope.
+15. For a release, run `git diff --check` and site CI, then follow [the publishing workflow](../publish-website-writing/SKILL.md#ship-blog-audio-in-a-follow-up-pr) for PR order and live asset verification. For an audit or local export, report the result at the requested stage.
 
 ## Narration audit
 

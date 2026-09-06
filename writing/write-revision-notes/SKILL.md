@@ -9,10 +9,10 @@ Read and apply [the universal writing style](../writing-style/SKILL.md).
 
 ## Workflow
 
-1. Identify the source, learning objectives, prerequisite concepts, and scope of the note.
+1. Identify the source, learning objectives, prerequisite concepts, and scope of the note. Choose the requested retrieval form: compact recap, derivation-rich notes, or recall cards. Length alone does not turn source notes into Blog.
 2. Preserve the source's technical claims while reorganizing for retrieval. Distinguish direct source material, clarification, and the author's own interpretation.
 3. Open with a quick overview that names what the reader should be able to explain or derive afterward.
-4. Organize sections by concept or dependency. Use descriptive headings and stable terminology rather than decorative narrative headings.
+4. For new or structurally revised notes, organize sections by concept or dependency. Preserve a requested source order or existing structure during scoped edits. Use descriptive headings and stable terminology rather than decorative narrative headings.
 5. Keep derivations complete enough to reconstruct. Define symbols, state assumptions, and explain why each step follows.
 6. Use examples, compact tables, diagrams, or code only when they improve recall or expose a boundary case.
 7. End sections with a concise memory hook, unresolved question, or connection to the next concept when useful.
@@ -20,9 +20,10 @@ Read and apply [the universal writing style](../writing-style/SKILL.md).
 
 ## Repo Shape
 
-- Use `section: revision-notes` and `/revision notes/YYYY/MM/DD/<postSlug>.html`.
+- For a new site note, use `section: revision-notes` and `/revision notes/YYYY/MM/DD/<postSlug>.html`; preserve existing slugs and routes during edits.
 - Prefer `.md`; use `.mdx` only when imports, JSX, or interaction are necessary.
 - Use `$...$` and `$$...$$` for math.
-- Add the entry and upstream source links to `src/pages/revision_notes.astro`, which is hand maintained.
+- When adding a site note or changing its listing metadata, update the entry and upstream links in `src/pages/revision_notes.astro`, which is hand maintained. A prose-only revision does not require a shelf change.
+- Use [publish-website-writing](../publish-website-writing/SKILL.md) for requested site integration and releases.
 
 These notes optimize for faithful retrieval, not essay-like suspense or survey completeness.

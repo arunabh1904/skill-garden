@@ -73,5 +73,5 @@ The preferred versions keep exact nouns, state the causal turn, and leave room f
 - Do not turn every contrast into two short sentences. Repetition and silence need a reason.
 - Keep first-person judgment sparse and earned: `my read`, `I would choose`, or `I suspect` should locate an actual decision.
 - Do not confuse restraint with emotional absence. Preserve the real reason the author cares, especially in the opening and conclusion.
-- Before a vivid example, make sure the reader understands the title's subject and the job it must do.
+- A vivid example may open the piece when it makes the subject and tension clear; otherwise establish that context before extending the scene.
 - Preserve technical detail that changes the model, experiment, evidence, or decision. Cut detail that only repeats completeness.

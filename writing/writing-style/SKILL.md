@@ -1,35 +1,39 @@
 ---
 name: writing-style
-description: "Apply the user's universal writing standard to every drafting, rewriting, editing, summarizing, or publishing task. Use for all prose, especially technical writing and content for arunabh1904.github.io, to preserve requested scope, make each paragraph answer one question, keep technical English simple and exact, vary cadence with intent, surface earned insight, and remove AI-writing residue. Always load this base before any paper, blog, Revision Notes, or Code-practice template."
+description: "Apply the user's shared voice, clarity, and evidence standards when drafting or editing prose. Preserve the requested scope and scale the process to the artifact, from a short message to a long technical article. Load this base before any writing category skill; it does not select a category or authorize publishing."
 ---
 
 # Writing Style
 
-Apply this skill to every writing task. It owns topic architecture, continuity, voice, paragraph craft, evidence discipline, audio continuity, and the final prose audit. It does not own category templates, frontmatter, file placement, or publishing.
+This skill owns voice, paragraph craft, continuity, evidence discipline, and the prose audit. Category skills own reading format; the publishing skill owns site integration and releases.
 
-Read and apply [the prose system](references/prose-system.md) before drafting or revising.
+Read [the prose system](references/prose-system.md) for the shared editorial rules. For authored technical essays and Blog posts, also read [the local voice examples](references/voice-examples.md) to calibrate cadence and judgment without copying their subject matter or sentence patterns.
 
-For authored technical essays and Blog posts, also read [the local voice examples](references/voice-examples.md). Use them as calibration for compression, cadence, and judgment. Do not copy their subject matter or force their exact sentence patterns onto a different piece.
+## Set The Editing Scope
 
-## Workflow
+The user's explicit instructions govern the category defaults and shared style. Choose the applicable mode before editing:
 
-1. Set the scope contract before editing: requested passages, allowed structural change, facts that must survive, and whether the user asked for compression, expansion, or a neutral rewrite. A request to tighten cadence, remove wordiness, or "rewrite a bit" does not authorize a whole-post expansion.
-2. Identify the audience, purpose, governing question, factual claims, and intended decision or takeaway. For a material revision, record the baseline with `scripts/audit_prose.py` before changing prose.
-3. Build the article spine before polishing sentences. Write one sentence that states the piece's controlling question, then arrange the minimum topic blocks in dependency order. Each block must inherit an object or question from the previous one and produce what the next block needs.
-4. Earn the title in the opening. The first paragraph should name the actual subject and explain the promise or distinction carried by the title before a vivid example, anecdote, or hyperbole asks the reader to infer it. For authored Blog posts, also locate the live motive: why this question matters now, what prompted it, or what the author finds surprising, difficult, exciting, or consequential.
-5. Test the outline alone. Headings should reveal a coherent route through the subject, keep siblings at the same level of abstraction, and separate the main mechanism from optional branches, applications, and history.
-6. Preserve the author's meaning, technical confidence, emotional register, and point of view. Preserve facts, citations, links, names, numbers, code, equations, frontmatter, tables, and asset paths unless the task explicitly changes them. Do not delete a personal trigger, a source that prompted the piece, or an earned reaction merely because a cleaner impersonal sentence can replace it.
-7. Draft or revise one paragraph at a time. Write the private question that the paragraph must answer. Keep only sentences that answer, qualify, evidence, interpret, or hand off that question.
-8. Run the editorial passes in this order: context and structure; missing explanation; pragmatic Simplified Technical English; earned insight and cadence; de-slop; audio continuity and deletion. Do not polish a sentence that belongs in a paragraph or section that should be cut.
-9. Separate source-reported evidence from synthesis and judgment. Research missing facts from canonical or first-party sources when the task authorizes research. Never strengthen prose by inventing facts, citations, measurements, motivations, or emotions.
-10. Prefer connected prose when ideas depend on one another. Use bullets only for parallel, independently scannable facts, options, checks, or artifacts.
-11. Add a table, equation, diagram, figure, or callout only when it answers a question more clearly than ordinary prose. Turn a genuine multi-stage process—usually four or more named stages, branches, or a feedback loop—into a compact diagram instead of leaving an inline arrow chain to impersonate one. Keep equations, two-item comparisons, and incidental directional notation in text. Introduce what the reader should notice, keep a complete verbal path for audio, and interpret the object afterward.
-12. Run the silent structure, continuity, audio, and prose audits in `references/prose-system.md`. For a material revision, compare the final file with its baseline using `scripts/audit_prose.py --baseline <git-revision> --check <file>`, or use `--baseline-file` for a supplied draft. Resolve regressions or document why the requested scope requires them.
+- **Light cleanup or redundancy removal:** preserve the author's sentences; default to deletion. Repair grammar, factual errors, and the specific confusion the user identified with the smallest necessary change. Delete the weaker repetition instead of synthesizing both passages into new prose.
+- **Cadence or clarity revision:** split, shorten, or locally reorder sentences where requested. Preserve meaning, voice, evidence, and coverage; do not turn it into a whole-post expansion.
+- **Structural revision:** reorganize the requested material to repair dependencies, repetition, or inconsistent instructions. Preserve useful content and explain material changes.
+- **New draft or requested expansion:** build the needed explanation and supporting evidence within the requested topic and depth.
 
-## Boundaries
+Keep facts, citations, links, names, numbers, code, equations, frontmatter, tables, and asset paths intact unless the task changes them. Preserve characteristic phrasing, real motives, emotional register, and point of view. Never invent the author's experiences or reactions.
 
-- Follow the matching category skill for format and repo mechanics; category rules override this base only where the reading task genuinely differs.
-- Do not make every category sound alike. The shared voice should survive different reading modes and levels of depth.
-- Do not imitate another writer's persona, anecdotes, signature phrases, or sentence patterns. Borrow durable editorial mechanics only.
-- Keep file diffs reviewable. Do not rewrite unrelated passages during a scoped edit.
-- When returning prose directly, lead with the revised text and briefly state material editorial choices only when useful.
+## Scale The Process
+
+A short message, caption, blurb, or brief answer needs a clear purpose and a direct prose check. It does not need an article outline, headings, source ledger, callout, diagram, or audio workflow. Use this base alone when no category template applies.
+
+For an article, identify its audience, controlling question, evidence boundary, and payoff. Build or inspect the topic order before polishing sentences. Apply the prose system's editorial passes only within the authorized editing scope: an audit can identify a structural problem without silently rewriting it during a light edit.
+
+Make each explanatory paragraph answer one question and connect it to the next. Keep brief hinges, captions, retrieval bullets, and conclusions proportionate to their job; they do not each need a miniature argument. Add a table, equation, diagram, or figure only when it clarifies the subject, subject to an explicit category requirement. Verbalize the key relationship around technical objects so the explanation survives without their layout. Generating audio is a separate task.
+
+For a material revision to an article, preserve the actual starting draft and use [audit_prose.py](scripts/audit_prose.py) to compare cadence and scope. Run from the article repository with `--baseline <git-revision> --check <file>` only when that revision represents the starting draft; otherwise save the draft and use `--baseline-file <saved-draft> --check <file>`. Metrics are warning signals, not proof of coherence or quotas. They are not a useful release gate for short copy or skill instructions.
+
+## Finish Within Scope
+
+- Run the relevant silent prose audits. For a cleanup, inspect the diff sentence by sentence and undo substitutions that do not fix the requested defect.
+- Separate reported evidence from synthesis. Verify missing technical claims against primary sources when needed; never invent facts to improve the prose.
+- Category rules may adapt format, depth, and reading mode. They do not override user intent, factual accuracy, or the editing scope.
+- Keep different forms distinct: a shared voice does not require identical structures or lengths.
+- When returning prose directly, lead with the revised text; explain material choices only when useful.

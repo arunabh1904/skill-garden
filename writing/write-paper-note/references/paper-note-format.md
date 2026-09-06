@@ -26,17 +26,25 @@
 
 Do not recreate broad catch-all fields such as `BEV`, `Omni-Models`, or `Autonomous Driving`.
 
-## Flexible Note Shape
+## Note Shape
 
-Most notes should contain:
+For new notes and requested format migrations, use this top-level shell with flexible detail inside it:
 
 1. Year/title heading and a compact source block: canonical paper first, followed by useful project, code, data, or venue links.
 2. A compact `Summary` that leads with the most decision-relevant result, names the method and setting, and states the evidence boundary.
 3. `Core Insights` covering the minimal mechanism, reported evidence, main trade-off, and one paper-specific delta from the closest relevant prior work: inherited problem, changed mechanism or assumption, reported evidence, and consequence.
-4. The smallest complete set of explanatory images needed to understand the paper, within a range of one to three images in `Core Insights`. At least one image is required. Include every image that carries a necessary part of the explanation and give each a non-redundant job; method, decisive evidence, and the main limitation are common jobs rather than mandatory slots. Use a focused composite when several necessary panels would otherwise exceed the cap. Add compact tables, algorithms, equations, or qualitative examples as support when useful, but do not count them as the required image. Caption what to notice and cite the canonical source. Add literal, paper-specific subheadings only when they improve navigation.
+4. Explanatory images and other supporting artifacts in `Core Insights`, following the image contract below. Add literal, paper-specific subheadings only when they improve navigation.
 5. `High-Level Takeaways` as three to five concise bullets connecting the paper to the research line, stating the decision implication and concrete boundary, and identifying the unresolved object handed to later work.
 
 Omit filler sections. Preserve useful existing material such as source links, images and captions, derivations, implementation sketches, playgrounds, or benchmark tables. Keep those supporting artifacts in `Core Insights`; reserve `High-Level Takeaways` for the scan-friendly conclusion list. Use `Summary`, `Core Insights`, and `High-Level Takeaways` as the top-level reading path; do not add template sections beneath them when connected prose is clearer.
+
+## Images And Captions
+
+Published notes require one to three local explanatory images. A table, equation, or code block does not count toward that requirement. Include the smallest complete set of figures needed to understand the paper; each must carry a distinct explanatory job. Method, decisive evidence, and a live boundary are common jobs, not mandatory slots. Do not add every figure, raw ablation, or appendix panel by default; use one when it supplies essential evidence.
+
+Prefer attributed source figures. Use a focused local schematic only when the source artifact is unavailable, illegible, unsafe to rehost, or less clear; label it as the author's explanation and cite the supporting source. Use a focused composite if necessary panels would exceed the image cap, preserving labels and disclosing crops or rearrangements. Do not alter the scientific meaning or imply the author-created layout came from the paper.
+
+Store assets in `public/assets/images/`. Add descriptive alt text and a caption in the form `*<what the figure shows>. source: [<paper>](<canonical URL>)*`. Retain figure numbers and license information when available. Verify files exist and remain legible in the rendered desktop and mobile note. Do not publish a note with missing assets or zero images.
 
 ## Takeaway Bullets
 
@@ -64,4 +72,4 @@ Treat the last three as the note author's research judgment. For surveys or benc
 
 ## Completeness Check
 
-Verify the note names the problem, minimal method, data, evaluation, main result and baseline, concrete boundary, paper-specific change from prior work, expensive decision, evidence that would reverse that decision, and the boundary between reported facts and synthesis. Verify one to three local images exist, render legibly, cover distinct explanatory jobs, and carry source-aware captions. Across a field, verify that chronological summaries expose real changes in mechanisms and evidence without turning publication order into an unsupported influence claim.
+Verify the note names the problem, minimal method, data, evaluation, main result and baseline, concrete boundary, paper-specific change from prior work, expensive decision, evidence that would reverse that decision, and the boundary between reported facts and synthesis. Verify the image contract above, including explanatory coverage and source-aware captions. Across a field, verify that chronological summaries expose real changes in mechanisms and evidence without turning publication order into an unsupported influence claim.
