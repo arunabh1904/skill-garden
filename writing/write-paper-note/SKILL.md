@@ -1,46 +1,44 @@
 ---
 name: write-paper-note
-description: "Add or revise a self-contained, source-grounded, decision-oriented Arxiv Note in arunabh1904.github.io. Use for one-paper notes, paper-summary cleanup, literature-field placement, chronological research-line analysis, and selecting explanatory paper figures or evidence tables. Do not use this compact format for multi-paper survey blogs."
+description: "Add or revise a self-contained, source-grounded, decision-oriented Arxiv Note in arunabh1904.github.io. Use when the reader needs a compact reconstruction of one paper, including paper-summary cleanup and literature-field placement. A Blog argument about one paper stays in Blog. Do not use this compact format for multi-paper survey blogs."
 ---
 
 # Write Paper Note
 
 Read and apply [the universal writing style](../writing-style/SKILL.md), then read [paper taxonomy and note format](references/paper-note-format.md).
 
+For a scoped edit, preserve the requested scope. A typo, title, or caption fix does not require rebuilding the field timeline or normalizing the whole note. Use the complete workflow for new notes and substantive paper audits.
+
 ## Workflow
 
 1. Work in `src/content/posts`; paper notes use `section: paper-shorts`.
 2. Inspect the existing note and nearby notes in the same `field`. Preserve frontmatter, `postSlug`, `legacyPath`, imports, equations, source links, useful headings, figures, tables, captions, and interactive components unless the task changes them. The `field` value also drives the site's automatic earlier/later paper reading path, so change it only when the taxonomy is genuinely wrong.
-3. Build the field timeline before revising prose. Order nearby papers by the paper's publication date, identify the prior assumption or bottleneck each paper inherits, and note which later paper reuses, rejects, or exposes a boundary in its result. Do not infer influence from chronology alone.
+3. For a new or substantive note, inspect the closest relevant papers in its field to establish the comparison. Build a full chronological field timeline only for a requested lineage or field audit. Use paper publication dates and verified technical relationships; chronology alone does not establish influence.
 4. Inspect the canonical paper source, preferably the arXiv PDF plus official project or code pages. Cover the contribution, method, training/data setup, evaluation, main results, ablations, limitations, and figure/table captions. Do not rely on memory for technical claims.
-5. Put a compact source block directly below the year/title heading: arXiv or the canonical paper first, then only useful project, code, data, or venue links. Use stable descriptive labels rather than raw URLs. Follow it with three recurring top-level sections: `Summary`, `Core Insights`, and `High-Level Takeaways`. Lead the summary with the paper's most decision-relevant finding and the evidence that supports it, then state the setting and boundary. Do not open with generic importance, a field recap, or an unsupported verdict.
+5. Follow the source block, three-section shell, and takeaway format in [the note format](references/paper-note-format.md). Lead the summary with the most decision-relevant finding, its evidence, and its boundary. Do not open with generic importance, a field recap, or an unsupported verdict.
 6. In `Core Insights`, explain the minimal mechanism, reported evidence, central trade-off, and the paper-specific change relative to the closest relevant prior work: inherited problem -> changed mechanism or assumption -> reported evidence -> consequence for the research line. Name the comparison axis and link to an existing earlier or later site note when that relationship is direct. If the source does not support a priority or influence claim, describe the technical contrast without claiming lineage.
 7. Use paper-specific subheadings inside `Core Insights` only when they materially improve a longer note. Prefer headings that name the object or question (`Why sparse queries replace a dense grid`, `What the matched-compute ablation shows`) over template labels or slogans. Do not use `Paper Insights` or `Decision Lens`.
-8. Make `High-Level Takeaways` a tight list of three to five bullets. Each bullet must carry one independent conclusion: the research-line change, the evidence-backed decision implication, the concrete limit or falsification condition, or the unresolved object handed to later work. Keep figures, tables, code, and extended evidence in `Core Insights`; the final section is a scan layer, not a second analysis section. Separate reported facts from research judgment and write `not reported` when an important source detail is missing.
-9. Select the smallest complete set of explanatory images needed to understand the paper, using one to three images for every published note. At least one image is mandatory; a table, equation, or code block does not satisfy the image requirement. Include every image that carries a necessary part of the explanation, give each one a distinct job, and omit decorative or redundant images. Method, decisive evidence, and the main limitation are common jobs, not slots that every note must fill. Prefer source figures with attribution when appropriate; create a focused local schematic only when the source artifact is unavailable, illegible, unsafe to rehost, or less clear.
-10. Store local assets in `public/assets/images/`, use descriptive alt text, and caption both what the reader should notice and the canonical source. Keep source figure numbers and licenses when available. Verify that every referenced file exists and remains legible in the rendered desktop and mobile note.
-11. End the takeaway list with a concrete boundary or handoff: what the evidence does not establish, which later direction addresses that gap when known, or what result would reverse the note's decision implication.
-12. Run the base prose audit, the lineage audit below, the one-to-three-image content gate, and the repository's canonical content checks. Do not publish a paper note with a missing asset or zero images.
+8. Select and caption images using [the image contract](references/paper-note-format.md#images-and-captions). Preserve the existing one-to-three-image publication requirement. Verify asset existence and legibility at desktop and mobile widths.
+9. Finish with the base prose audit and [the completeness check](references/paper-note-format.md#completeness-check). Run the lineage audit below for a requested field-wide review; check only relevant comparisons for a single note. Use the publishing skill for site validation and shipping when requested.
 
 ## Lineage Audit
 
-Run this audit one field at a time, in chronological order:
+For a requested field or research-line audit, run this one field at a time in chronological order:
 
 1. Read only the title, date, `Summary`, paper-specific change in `Core Insights`, and `High-Level Takeaways` of each note. Together they should form a cumulative technical history rather than a sequence of abstracts.
 2. Check that every paper-specific comparison uses one controlled axis: representation, prediction target, objective, architecture, data, compute, evaluation, or deployment contract.
 3. Distinguish three kinds of statement: the paper reports a result; the mechanism differs from earlier work; the note author infers a research trend. Cite the first, state the second precisely, and label the third as synthesis.
-4. Remove repeated field background once an earlier linked note already establishes it. Spend that space on the paper-specific delta, evidence, trade-off, and new unresolved question.
+4. Compress repeated field background while retaining the minimum context needed to understand each note on its own. Link to earlier notes for extended background; spend the recovered space on the paper-specific change, evidence, trade-off, and unresolved question.
 5. Run a chronology check against canonical publication dates. Never use the website post date as evidence of research priority, and never say a later paper caused an earlier one.
 6. Run the swap test on every summary and takeaway. If another paper in the field could use the sentence unchanged, replace it with the distinctive mechanism, result, or boundary.
 
 ## Guardrails
 
 - Keep the note compact but complete; do not produce a paper-length rewrite.
-- Preserve useful specialized sections instead of forcing every note into identical labels.
+- Preserve useful specialized material as subheadings or artifacts inside the three-section shell when creating or restructuring a note. A scoped edit does not authorize a format migration.
 - Keep the canonical links, opening summary, and paper-specific change easy to find. Use the three-section shell consistently, but do not force identical subheadings or paragraph counts inside it.
 - Do not hand-maintain previous/next navigation links. Assign the correct `field`; the shared paper template links the note to its same-field chronological reading path. Add inline links to other notes only when the prose discusses a direct technical relationship.
 - Use tables for exact evidence and diagrams for mechanisms; use both when they answer different questions.
-- Keep every published paper note within one to three images while preserving every visual needed for understanding. Use a focused composite when several necessary panels would otherwise exceed the cap; remove only panels that do not carry part of the explanation.
 - Never infer exact loss weights, mixture ratios, compression rates, scaling laws, metrics, datasets, or motivations.
 - Never claim that one paper influenced, enabled, solved, or superseded another solely because of publication order or architectural similarity.
 - For ambiguous paper titles, resolve against canonical metadata and label any remaining mapping uncertainty.

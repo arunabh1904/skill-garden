@@ -12,6 +12,8 @@ This is a pragmatic adaptation of Simplified Technical English, not a claim of s
 
 ## Protect Scope Before Style
 
+Use the editing modes in [writing-style](../SKILL.md) to set scope. The passes below identify possible improvements; apply only those permitted by that scope. Short copy and retrieval notes need only the relevant checks.
+
 Treat the user's requested change as a contract. A cadence pass may split, shorten, reorder, or delete sentences, but it must not silently become a new literature survey. A compression pass preserves the governing claims, evidence, citations, equations, and decision boundaries; it does not preserve every explanatory sentence. Add background or new sources only when the user asked for more coverage or when a missing fact blocks correctness.
 
 Measure material revisions against their source. A style-only pass should normally hold or reduce prose length. It should not raise the share of long sentences, collapse many paragraphs into denser blocks, or erase the short sentences that carry orientation and consequence. These are regression signals, not universal quotas: inspect the exact passages before overriding them.
@@ -42,9 +44,9 @@ Use only the rungs the topic needs. The value comes from dependency order, not f
 
 ## Earn The Title Before The Example
 
-The opening must explain what the title promises. Name the subject, define the job or distinction at stake, and tell the reader what the piece will help them understand. Do this before asking a vivid example, anecdote, or hyperbole to carry the framing alone.
+The opening must explain what the title promises. Name the subject and the job or distinction at stake early. A concrete scene can do this itself; otherwise add the framing before extending the anecdote. Do not force a separate definition paragraph when the opening already makes the subject and tension clear.
 
-A concrete example is often the right second move. Once the reader knows the task, the example can expose why it is hard. Without that setup, a striking scene can feel like a generated hook pasted in front of an unrelated article.
+A concrete example is often the right opening or second move. Once the reader knows the task, the example can expose why it is hard. Without that setup, a striking scene can feel like a generated hook pasted in front of an unrelated article.
 
 For authored Blog posts, make the trigger visible when it is real. A post, result, failure, argument, or recurring confusion may have pulled the subject out of the backlog. Say so. Explain why the question feels live now and what changed in the author's own model. Do not replace that motive with generic claims that the topic is important or rapidly evolving.
 
@@ -71,7 +73,7 @@ The test is not whether the prose sounds warm. It is whether a reader can tell w
 
 ## Make Every Paragraph Answer One Question
 
-Write a private margin question for every paragraph. The question can ask what an object is, how it works, why a result follows, what evidence supports it, where it fails, or what decision it changes. If two questions need different answers, split the paragraph. If adjacent paragraphs answer the same question, merge them unless the separation creates a deliberate hinge.
+Write a private margin question for every paragraph. The question can ask what an object is, how it works, why a result follows, what evidence supports it, where it fails, or what decision it changes. If two questions need different answers, split the paragraph. If adjacent paragraphs answer the same question, merge them when restructuring is in scope; in a redundancy-only pass, delete the weaker repetition while preserving the surviving wording. Keep deliberate hinges.
 
 A complete explanatory paragraph usually has four moves:
 
@@ -98,21 +100,13 @@ Do not force all four moves into four sentences. Combine them when the paragraph
 
 These are judgment rules, not a blacklist. Em dashes, long words, passive clauses, and technical language remain available when they do real work.
 
-## Argument-Led Paragraphs
+## Make Paragraphs Cumulative
 
-- Give each paragraph one governing claim or turn. Let every sentence develop, qualify, test, or draw a consequence from it.
-- Make paragraphs cumulative. The first sentence should either pick up a concrete noun or unresolved question from the prior paragraph, or clearly announce a necessary change of level.
-- Put the claim or concrete situation early. Do not open by announcing that a topic is important, complex, or fast-moving.
-- Name actors and forces in causal explanations: a model shares parameters, a mixture changes the gradient budget, or an evaluation hides a control.
-- Use qualification to sharpen a claim, not evade one. State the judgment, acknowledge the strongest live alternative, and explain what evidence keeps the judgment intact.
-- Use first person to locate judgment or experience: `my read`, `I suspect`, `I would choose`. Do not use it as filler or false intimacy.
-- Start a new paragraph when the causal step, level of analysis, or argumentative job changes.
-- Vary sentence length by function. Use a short sentence to orient or land a consequence; use a longer one when real dependencies belong together.
-- Treat a one-sentence paragraph as emphasis, a reset, or a deliberate hinge. Do not let several short paragraphs in a row fragment one explanation; merge them when they share a claim.
-- Do not end a paragraph merely because a fact, citation, equation, list, or example has been stated. Add the interpretation: what changed in the reader's model, why the fact matters here, or which question it creates next.
-- Use a landing sentence with one of five jobs: consequence, contrast, synthesis, scope boundary, or handoff. Avoid generic recap.
-- Prefer paragraphs when ideas depend on one another. Use bullets only for genuinely parallel material.
-- Treat density as relationships per paragraph, not jargon per sentence. Dense prose tells the reader what caused what, under which condition, and why it matters.
+The first sentence should pick up a concrete object or unresolved question from the prior paragraph, or announce a necessary change of level. Use qualification to sharpen a judgment: acknowledge the strongest live alternative and state what evidence keeps the judgment intact.
+
+Do not end an explanation at a fact, citation, or example when the reader still needs its implication. A landing can supply a consequence, contrast, synthesis, scope boundary, or handoff. Brief hinges and retrieval entries need only the moves their job requires.
+
+Treat density as relationships per paragraph, not jargon per sentence. Dense prose tells the reader what caused what, under which condition, and why it matters. Prefer connected prose for dependent ideas and bullets for parallel material.
 
 ## Write The Music, Not The Ornament
 
@@ -200,7 +194,7 @@ Run these passes before sentence-level cleanup:
 
 ## Required Editorial Passes
 
-Run these passes in order. Later passes must not repair a structural problem with prettier sentences.
+For substantial drafting or revision, run the relevant passes in order within the agreed scope. During a light cleanup, flag missing explanation or structural defects that require broader work rather than expanding the piece. Later passes must not repair a structural problem with prettier sentences.
 
 1. **Context pass:** read the whole piece paragraph by paragraph. Recover the governing question, remove orphan material, and reorder sections by dependency. Write a private question for each paragraph.
 2. **Explanation pass:** expand unclear steps. For a load-bearing paper, mechanism, result, equation, or code path, add the missing context needed to understand it without an external click. Do not add background that the technical audience already has.
@@ -218,7 +212,7 @@ Run silently unless the user requests editorial diagnostics:
 3. Cut sentences and words that add no fact, qualification, causal link, or useful rhythm.
 4. Rewrite passive constructions when naming the actor improves clarity.
 5. Replace avoidable jargon while protecting technical precision.
-6. Check that every paragraph has one governing claim, a developed middle, and a landing that advances the piece.
+6. Check that every explanatory paragraph answers one question and supplies the development its job needs; keep deliberate hinges and retrieval entries compact.
 7. Check every adjacent paragraph pair for an explicit causal, contrastive, zoom, dependency, or open-question relationship.
 8. Run the swap test on the opening, conclusion, headings, summary, and other high-salience lines.
 9. Check that every visual, table, and equation has an explanatory job and is interpreted in the prose.
