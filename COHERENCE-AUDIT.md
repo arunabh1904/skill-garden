@@ -70,3 +70,7 @@ These are instruction-level walkthroughs, not independent model evaluations or g
 - Existing local garden edits were saved before the cleanup and preserved in intent, including the visual refinements, paper-image policy, narration profile, and artifact thresholds. No website files were changed, no audio was generated, and no skill changes were committed or published.
 
 The remaining maintenance risk is operational drift: site schemas and the audio exporter can change independently of these skills. The updated references direct future tasks to verify the relevant live code instead of treating copied instructions as proof of current behavior. Structural validation and these walkthroughs cannot guarantee the quality of every future draft.
+
+## Forward test: first paper release
+
+The CounterAlign publication sample exercised the live content tests after the instruction audit. It exposed two missed site contracts: `Summary` must be a Markdown blockquote, and image captions must use sequential note-local `Fig <n>` numbering, an 8–60-word explanation, and the `| source:` separator. The paper-format reference now includes both. Source figure numbers remain in alt text or source labels. The sample was corrected without weakening the website tests. This is a concrete limit of the earlier structural validation: valid skill files alone did not establish compatibility with the publishing application.

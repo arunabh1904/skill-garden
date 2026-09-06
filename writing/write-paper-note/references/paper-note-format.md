@@ -31,7 +31,7 @@ Do not recreate broad catch-all fields such as `BEV`, `Omni-Models`, or `Autonom
 For new notes and requested format migrations, use this top-level shell with flexible detail inside it:
 
 1. Year/title heading and a compact source block: canonical paper first, followed by useful project, code, data, or venue links.
-2. A compact `Summary` that leads with the most decision-relevant result, names the method and setting, and states the evidence boundary.
+2. A compact `Summary` rendered as a Markdown blockquote (`> ...`) that leads with the most decision-relevant result, names the method and setting, and states the evidence boundary.
 3. `Core Insights` covering the minimal mechanism, reported evidence, main trade-off, and one paper-specific delta from the closest relevant prior work: inherited problem, changed mechanism or assumption, reported evidence, and consequence.
 4. Explanatory images and other supporting artifacts in `Core Insights`, following the image contract below. Add literal, paper-specific subheadings only when they improve navigation.
 5. `High-Level Takeaways` as three to five concise bullets connecting the paper to the research line, stating the decision implication and concrete boundary, and identifying the unresolved object handed to later work.
@@ -44,7 +44,7 @@ Published notes require one to three local explanatory images. A table, equation
 
 Prefer attributed source figures. Use a focused local schematic only when the source artifact is unavailable, illegible, unsafe to rehost, or less clear; label it as the author's explanation and cite the supporting source. Use a focused composite if necessary panels would exceed the image cap, preserving labels and disclosing crops or rearrangements. Do not alter the scientific meaning or imply the author-created layout came from the paper.
 
-Store assets in `public/assets/images/`. Add descriptive alt text and a caption in the form `*<what the figure shows>. source: [<paper>](<canonical URL>)*`. Retain figure numbers and license information when available. Verify files exist and remain legible in the rendered desktop and mobile note. Do not publish a note with missing assets or zero images.
+Store assets in `public/assets/images/`. Add descriptive alt text and a caption in the form `*Fig <n>: <what the figure shows> | source: [<paper>](<canonical URL>)*`. Number figures sequentially within the note, beginning at 1. Keep the source figure number in the alt text or source label so note-local numbering does not misidentify it. Use 8–60 words of explanation before the source separator, matching the site content validator. Retain license information when available. Verify files exist and remain legible in the rendered desktop and mobile note. Do not publish a note with missing assets or zero images.
 
 ## Takeaway Bullets
 
