@@ -2,6 +2,18 @@
 
 Read this reference for authored technical essays and Blog posts. These examples come from the author's own drafts. They calibrate editorial mechanics, not subject matter or a rigid template.
 
+## The Current Draft Is The Stronger Reference
+
+The examples below cover only some registers. They do not require every Blog to sound like a restrained analytical essay. In the VLM draft, the author wrote:
+
+> Vision-language models have become incredibly popular over the last few years. Rightfully so!
+
+And, after explaining CLIP's shared embedding space:
+
+> Do it across a large enough corpus and batch, and voilà: classification becomes retrieval against language.
+
+The enthusiasm and small flourish belong to the author. Preserve them while checking the adjacent technical claims. Replacing both passages with sober mechanism summaries keeps the topic but loses the voice. Similarly, `Let's unpack`, `My current read`, and `We just do not get that conclusion` can carry invitation, judgment, and emphasis; they are not defects because an impersonal alternative exists.
+
 ## What The Voice Does
 
 ### Earn the title by defining the job
