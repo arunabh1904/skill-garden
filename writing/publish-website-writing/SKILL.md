@@ -13,7 +13,7 @@ Read one primary category skill per artifact; a mixed batch may need several. Ea
 
 | Visible category | Trigger | Skill | Storage |
 | --- | --- | --- | --- |
-| Arxiv Notes | compact reconstruction of one paper | [write-paper-note](../write-paper-note/SKILL.md) | `section: paper-shorts` |
+| Arxiv Notes | explanatory reconstruction of one paper | [write-paper-note](../write-paper-note/SKILL.md) | `section: paper-shorts` |
 | Blog | short or long argument, explainer, commentary, or research synthesis | [write-blog-post](../write-blog-post/SKILL.md) | `section: blog` |
 | Revision Notes | lecture, course, book, or source notes | [write-revision-notes](../write-revision-notes/SKILL.md) | `section: revision-notes` |
 | Code | interview practice problem | [write-code-practice-problem](../write-code-practice-problem/SKILL.md) | `src/lib/code-practice.ts` |

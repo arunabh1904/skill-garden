@@ -18,7 +18,7 @@ The user's explicit instructions govern the category defaults and shared style. 
 - **Structural revision:** reorganize the requested material to repair dependencies, repetition, or inconsistent instructions. Preserve useful content and explain material changes.
 - **New draft or requested expansion:** build the needed explanation and supporting evidence within the requested topic and depth.
 
-Keep facts, citations, links, names, numbers, code, equations, frontmatter, tables, and asset paths intact unless the task changes them. Preserve characteristic phrasing, real motives, emotional register, and point of view. Never invent the author's experiences or reactions.
+Keep facts, citations, links, names, numbers, code, equations, frontmatter, tables, and asset paths intact unless the task changes them. Preserve characteristic phrasing, real motives, emotional register, and point of view. Never invent the author's experiences or reactions. In an existing authored piece, the draft is the primary voice reference; examples and editorial defaults are secondary. Treat loss of recognizable voice as a regression even when facts, links, and sentence-length metrics survive.
 
 ## Scale The Process
 

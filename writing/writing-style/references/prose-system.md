@@ -71,9 +71,13 @@ Simple technical English is not emotionally neutral English. Authored prose shou
 
 The test is not whether the prose sounds warm. It is whether a reader can tell why this author, with this experience and judgment, chose to write this piece.
 
-## Make Every Paragraph Answer One Question
+For an existing Blog, distinguish authored enthusiasm from generated hype. A phrase such as `Rightfully so!` or `and voilà` may carry the author's delight and timing; it does not need to become a technical claim. Keep it when the surrounding explanation supports the thought. Repair an overclaim in place without replacing the whole paragraph's register. Ordinary conversational bridges, small asides, and moments of recognition can earn space by sustaining the relationship with the reader.
 
-Write a private margin question for every paragraph. The question can ask what an object is, how it works, why a result follows, what evidence supports it, where it fails, or what decision it changes. If two questions need different answers, split the paragraph. If adjacent paragraphs answer the same question, merge them when restructuring is in scope; in a redundancy-only pass, delete the weaker repetition while preserving the surviving wording. Keep deliberate hinges.
+The source draft takes precedence over the voice examples. Before accepting a substantial edit, compare the opening, a technical explanation, and the ending against the original: would the author recognize their own way of thinking aloud? Undo substitutions whose only gain is a more uniformly polished or analytical sound. Do not compensate for lost voice by sprinkling in invented first person, questions, jokes, or exclamation marks.
+
+## Make Every Explanatory Paragraph Answer One Question
+
+Use a private margin question to diagnose an unclear explanatory paragraph. This is a diagnostic, not a required paragraph mold. The question can ask what an object is, how it works, why a result follows, what evidence supports it, where it fails, or what decision it changes. If two questions need different answers, split the paragraph. If adjacent paragraphs answer the same question, merge them when restructuring is in scope; in a redundancy-only pass, delete the weaker repetition while preserving the surviving wording. Keep deliberate hinges.
 
 A complete explanatory paragraph usually has four moves:
 
@@ -82,7 +86,7 @@ A complete explanatory paragraph usually has four moves:
 3. **Interpret:** say what the details change in the reader's model.
 4. **Land:** state the consequence, limit, or question that hands off to the next paragraph.
 
-Do not force all four moves into four sentences. Combine them when the paragraph stays clear. The governing test is whether every sentence works on the same question.
+Do not force every paragraph through these four moves or give every paragraph a concluding lesson. A scene, aside, observation, or unresolved question can have a different shape. Combine moves when the explanation stays clear. The governing test is whether every sentence works on the same question.
 
 ## Plain Language Without Lost Precision
 
@@ -118,7 +122,7 @@ Rhythm must clarify the argument. It is not permission for lyrical filler.
 - Avoid several sentences with the same length and syntax. Also avoid a mechanical alternation of short and long sentences.
 - Read punctuation as timing. A period closes a unit. A colon opens an explanation. Parentheses lower the volume. An em dash makes a sharp aside or turn. Use each because the relationship calls for it.
 - Repeat a key phrase when repetition builds the idea. Do not replace purposeful repetition merely to vary vocabulary.
-- Use a one-sentence paragraph or callout as silence around an important line. If the line does not contain a non-obvious inference, decision boundary, or mental-model correction, return it to the paragraph or delete it.
+- Use a one-sentence paragraph or callout as silence around an important line. It may carry an inference, a pause, a reaction, or an invitation to the reader. Preserve an authored beat when it works; do not require every short paragraph to deliver an insight.
 - Never write a fake-profound kicker. A sentence that sounds quotable but adds no mechanism, evidence, consequence, or honest judgment is filler.
 
 ## Transitions Without Filler
@@ -201,7 +205,7 @@ For substantial drafting or revision, run the relevant passes in order within th
 3. **Simple-English pass:** shorten syntax, put the real subject and verb early, use simple tenses, keep one name per object, resolve pronouns, and split paragraphs that answer more than one question.
 4. **Insight-and-music pass:** vary sentence length by function. Add only earned hinge lines or callouts backed by the explanation. Remove ornamental metaphors and fake crescendos.
 5. **De-slop pass:** find empty summary sentences, bullet overuse, flat rhythm, wrong grammatical subjects, low information density, vagueness, ambiguous demonstratives, and fluent sentences that assume the understanding they claim to provide. Preserve useful repetition, signposting, parallel structure, declarative openings, and em dashes.
-6. **Audio-and-deletion pass:** listen to the path through headings, paragraphs, and technical objects. Repair backward jumps and visual-only references. Delete every sentence that adds no fact, qualification, causal link, decision, or useful rhythm.
+6. **Audio-and-deletion pass:** listen to the path through headings, paragraphs, and technical objects. Repair backward jumps and visual-only references. Remove sentences that add neither understanding nor an authored purpose such as rhythm, humor, motive, or connection with the reader.
 
 ## Final Prose Audit
 
@@ -209,17 +213,17 @@ Run silently unless the user requests editorial diagnostics:
 
 1. Replace decorative framing and stale phrases with the intended claim.
 2. Shorten abstract language when an exact simpler phrase exists.
-3. Cut sentences and words that add no fact, qualification, causal link, or useful rhythm.
+3. Cut empty repetition while preserving words that carry the author's rhythm, humor, motive, or connection with the reader.
 4. Rewrite passive constructions when naming the actor improves clarity.
 5. Replace avoidable jargon while protecting technical precision.
 6. Check that every explanatory paragraph answers one question and supplies the development its job needs; keep deliberate hinges and retrieval entries compact.
 7. Check every adjacent paragraph pair for an explicit causal, contrastive, zoom, dependency, or open-question relationship.
-8. Run the swap test on the opening, conclusion, headings, summary, and other high-salience lines.
+8. Run the swap test on substantive claims in the opening, conclusion, headings, and summary. Do not use it to erase ordinary conversational language from an authored Blog.
 9. Check that every visual, table, and equation has an explanatory job and is interpreted in the prose.
 10. Read for cadence. Undo edits that make every sentence equally short, polished, or predictable.
 11. Ask the private question for each paragraph and confirm that every sentence helps answer it.
 12. Listen for references that require the page layout. Name the object or relationship so the prose survives audio.
 13. Compare the contribution with the length. Cut until every remaining paragraph repays the reader's attention.
-14. Compare the revision with its source. Investigate unexpected word growth, paragraph collapse, or a higher long-sentence share before accepting the edit.
+14. Compare the revision with its source. Investigate unexpected word growth, paragraph collapse, a higher long-sentence share, or loss of recognizable author voice before accepting the edit. Voice is a separate check; cadence statistics cannot establish it.
 
 The plain-language rules adapt the public principles of [ASD Simplified Technical English](https://www.asd-ste100.org/), the user's [Amazon writing reference](https://github.com/ksindi/managers-playbook/blob/main/images/write-like-an-amazonian.jpg), and George Orwell's durable editing principles. The cadence rules use the sentence-length lesson in the user's [write music reference](https://github.com/ksindi/managers-playbook/blob/main/images/write-music.png). The de-slop pass applies Shreya Shankar's [analysis of LLM writing](https://www.sh-reya.com/blog/ai-writing/): remove empty conclusions, list abuse, flat rhythm, wrong subjects, low density, vagueness, ambiguous demonstratives, and fluency without understanding while retaining rhetorical devices that do real work. These are editorial mechanics, not an imitation of another writer's persona or signature phrases.
